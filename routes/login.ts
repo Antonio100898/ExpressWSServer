@@ -4,7 +4,8 @@ const router = express.Router()
 
 //login 
 router.post("/", (req, res) => {
-  const {} = req.body
+  const {email, password} = req.body
+  
   res.send("post login")
 })
 
